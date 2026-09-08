@@ -1,0 +1,235 @@
+body{
+    margin: 0px;
+    color: #e5ef21;
+    background-color: rgba(0, 0, 0, 0.935);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+      font-family:  Arial, Helvetica, sans-serif, Calibri, 'Trebuchet MS', sans-serif ;
+    
+}
+.nav{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: space-between;
+    border-bottom: #e5ef21 1px solid;
+    margin-bottom: 3px;
+    position: fixed;
+    width: 100%;
+    top: 0
+}
+.nav img{
+    width: 60px;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    text-decoration: none;
+    padding: 0px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    
+    margin: 0 6px;
+    padding: 6px 3px;
+    color: #e5ef21;
+    font-size: 20px;
+    transition:0.3s ;
+}
+a:hover{
+    background-color: rgba(89, 96, 89, 0.43);   
+}
+a:active{
+    background-color: rgba(140, 161, 49, 0.795);   
+}
+.contenu{
+    
+    display: grid;
+    grid-template-columns: 13rem 13rem 13rem 13rem;
+    column-gap:  16px ;
+    justify-content:start;
+    row-gap: 15px;
+}
+.card img{
+    width: 100%;
+    height: 300px;
+}
+.card p{
+    text-align:center;
+    margin: 4px 0px 0px 0px;
+    font-weight: bold;
+    align-self: flex-start ;
+}
+.card{
+    overflow: hidden;
+    border: #21deef 2px solid;
+    transition: 0.5s ;
+    margin-bottom:  1rem;
+    color: #000;
+    background-color: aliceblue;
+    padding-bottom:0 ;
+}
+.card .prix{
+    color: #000;
+    border: .2rem black solid;
+    margin: 1rem 0 0 0;
+    max-width: 8rem;
+    font-size: 1.2rem;
+    margin-top: 3px;
+    margin-bottom: 0;
+}
+.card .prix::after{
+    content: " -30%";
+    color: red;;
+    margin-left: .3rem;
+}
+
+h1{
+    margin-top: 109px;
+    margin-left: 100px;
+    font-size: 60px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+.card:hover{
+    box-shadow: 0px 8px 10px rgb(243, 233, 233);
+    transform: translateY(-3px);
+    
+}
+.act{
+    background-color: #e5ef21;
+    color: #000;
+}
+   
+
+.slider{
+    left: 30%;
+    position: absolute;
+    width: 20rem;
+    margin: auto;
+    overflow: hidden;
+    z-index: -1;
+    justify-self:center;
+}
+.slider p{
+    font-size: 2rem;
+
+}
+.slider img{
+    
+    width: 100%;
+    display: none;
+}
+img.displaySlide{
+    display: block;
+    animation:fade 1.5s ;
+}
+.btn {
+    z-index: 23;
+    font-size: 2rem;
+    position: absolute;
+    top: 10rem;
+    
+}
+.prv{
+    left: 0rem;
+}
+.next{
+    right: 0;
+}
+.nonav{
+    position: static;
+    z-index: 16;
+}
+@keyframes fade {
+    from{opacity: .5;}
+    to{opacity: 1;}
+}
+.cont{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 700px;
+    
+}
+#myh{
+    margin-top: 20px;
+    margin-bottom: 45px;
+}
+#card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #040404;
+    width: 400px;
+    height: 500px;
+    transition: .9s;
+    
+}
+#card:hover{
+    box-shadow: 11px 8px 5px white;
+    transform: translateY(450px);
+}
+.icon{
+    width: 42px;
+    border-radius: 50%;
+    margin-left: 24px;
+    transition: .3s;
+}
+#profil{
+    width: 200px;
+    border-radius: 50%;
+    margin-bottom: 34px;
+
+}
+#wat{
+    text-decoration: none;
+}
+#btnw{
+    margin-top: 12px;
+    font-size: 38px;
+    border-radius: 54px;
+    background-color: #b5bc3a;
+    color: #000;
+}
+@media (max-width:700px){
+.contenu{
+     grid-template-columns:11rem 11rem;
+     margin-left: 2rem;
+}
+.slider{
+    left: 10%;
+}
+}
+.total{
+    color: #000;
+    background-color: #e7e0e0;
+    position: fixed;
+    bottom: 1%;
+    right:1rem;
+    width: 3rem;
+    height: 3rem ;
+    text-align: center;
+    border-radius: 50%;
+    font-size: .6rem;
+    padding: 1.3rem;
+
+}
+.total h3{
+    margin: 0;
+}
+.total h2{
+    margin: 0;
+}
+.total button{
+    font-family: Arial, Helvetica, sans-serif,'Courier New', Courier, monospace;
+    font-size: 1rem;
+    color: #000;
+    margin-top: 0;
+    background-color: rgba(64, 183, 234, 0.79);
+}
+.total button:hover{
+    background-color: rgb(70, 236, 58);
+}
